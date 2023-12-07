@@ -62,7 +62,6 @@ void clearBoard() {
 
 // loop over all LEDs and set them all to red
 void errorBoard() {
-  Serial.println("oops!!");
   for(int i=0; i<strip.numPixels(); i++){
     strip.setPixelColor(i, strip.Color(0, 255, 0));
   }
